@@ -60,7 +60,7 @@ public class TestCases extends BaseClass {
 		String header=xccDriver.getEducation().EducationalResource_header.getText();
 		Assert.assertEquals(header.trim(), "Educational Resource Details");
 		extentManager.test.log(Status.PASS, "[Page header verified]"+" "+header.trim());
-		Thread.sleep(3000);
+		
 		
 	}
 

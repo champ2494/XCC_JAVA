@@ -12,7 +12,9 @@ public class TestData
 {
 	public static String username_value = "";
 	public static String Password_value = "";
-	public static String ICD_name = "";
+	public static String ER_id = "";
+	public static String ER_displayName = "";
+	
 
 	public void readExcel(int rowcount,String PageName) throws IOException
 	{
@@ -41,6 +43,20 @@ public class TestData
 			}
 		}
 		
+		if (PageName == "ER")
+		{
+
+			Sheet ExcelSheet = Excel_Workbook.getSheet(PageName);
+
+
+			for (int j = rowcount; j <= rowcount; j++)
+			{
+				ER_id = ExcelSheet.getRow(j).getCell(0).getStringCellValue();
+				ER_displayName = ExcelSheet.getRow(j).getCell(1).getStringCellValue();
+				
+
+			}
+		}
 		Excel_Workbook.close();
 	}
 

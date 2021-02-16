@@ -97,7 +97,7 @@ public class BaseClass {
 		
 	@AfterMethod
 	public void tearDown() throws IOException {
-		driver.close();
+		//driver.close();
 	}
 
 	public static String screenShot(WebDriver driver, String filename) {

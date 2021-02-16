@@ -77,6 +77,14 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    
+    <!-- https://mvnrepository.com/artifact/de.openkeyword/autoit -->
+<dependency>
+    <groupId>de.openkeyword</groupId>
+    <artifactId>autoit</artifactId>
+    <version>0.2.32</version>
+</dependency>
+    
   </dependencies>
 
   

@@ -1,29 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="1" failed="0" skipped="0">
+<testng-results total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-15T12:55:19Z" name="Suite" finished-at="2021-02-15T12:55:45Z" duration-ms="26621">
+  <suite started-at="2021-02-16T12:53:20Z" name="Suite" finished-at="2021-02-16T12:54:03Z" duration-ms="43062">
     <groups>
     </groups>
-    <test started-at="2021-02-15T12:55:19Z" name="Test" finished-at="2021-02-15T12:55:45Z" duration-ms="26621">
+    <test started-at="2021-02-16T12:53:20Z" name="Test" finished-at="2021-02-16T12:54:03Z" duration-ms="43062">
       <class name="TestScripts.TestCases">
-        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:TestScripts.TestCases@25fb8912]" started-at="2021-02-15T18:25:18Z" name="BeforeSuite" finished-at="2021-02-15T18:25:19Z" duration-ms="187" status="PASS">
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:TestScripts.TestCases@31fa1761]" started-at="2021-02-16T18:23:20Z" name="BeforeSuite" finished-at="2021-02-16T18:23:20Z" duration-ms="215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeSuite -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestScripts.TestCases@25fb8912]" started-at="2021-02-15T18:25:19Z" name="setup" finished-at="2021-02-15T18:25:21Z" duration-ms="2606" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestScripts.TestCases@31fa1761]" started-at="2021-02-16T18:23:20Z" name="setup" finished-at="2021-02-16T18:23:23Z" duration-ms="2792" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginPageTest()[pri:0, instance:TestScripts.TestCases@25fb8912]" started-at="2021-02-15T18:25:21Z" name="loginPageTest" finished-at="2021-02-15T18:25:41Z" duration-ms="19834" status="PASS">
+        <test-method signature="loginPageTest()[pri:0, instance:TestScripts.TestCases@31fa1761]" started-at="2021-02-16T18:23:23Z" name="loginPageTest" finished-at="2021-02-16T18:24:02Z" duration-ms="39748" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Educational resource saved successfully.] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Educational resource saved successfully.] but found []
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at TestScripts.TestCases.loginPageTest(TestCases.java:95)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScripts.TestCases@25fb8912]" started-at="2021-02-15T18:25:41Z" name="tearDown" finished-at="2021-02-15T18:25:45Z" duration-ms="4169" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScripts.TestCases@31fa1761]" started-at="2021-02-16T18:24:03Z" name="tearDown" finished-at="2021-02-16T18:24:03Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="AfterSuite()[pri:0, instance:TestScripts.TestCases@25fb8912]" started-at="2021-02-15T18:25:45Z" name="AfterSuite" finished-at="2021-02-15T18:25:46Z" duration-ms="410" status="PASS">
+        <test-method is-config="true" signature="AfterSuite()[pri:0, instance:TestScripts.TestCases@31fa1761]" started-at="2021-02-16T18:24:03Z" name="AfterSuite" finished-at="2021-02-16T18:24:03Z" duration-ms="467" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterSuite -->

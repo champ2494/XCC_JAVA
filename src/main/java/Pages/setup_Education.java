@@ -39,12 +39,12 @@ public setup_Education() {
 	@FindBy(how = How.ID, using = "btnSave")
 	public WebElement EResource_save;
 	
-	
-	
+
 
 	
 	
 	 public static By wait_setup() {return By.cssSelector("#ctl00_mnuUserMenu_i0_i0_btnUserMenuSetup");}
+	 public static By wait_ER_remove() {return By.cssSelector("input[value='Remove']");}
 	 public static By wait_ER_addpage_open() {return By.cssSelector("#h1tag");}
 	 public static By wait_Home() {return By.xpath("(//span[@class='rmText rmExpandDown'])[2]");}
 	 public static By wait_org() {return By.xpath("//h1[contains(text(),'Organizations')]");}

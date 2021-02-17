@@ -23,7 +23,7 @@ public class TestCases extends BaseClass {
 
 	public void loginPageTest() throws Exception {
 
-		//wait till image loads and how to pass path dynamically-tmrw
+		// wait till image loads and how to pass path dynamically-tmrw
 		extentManager.test.log(Status.INFO, "[Start the test by logging in]");
 		Login();
 		extentManager.test.log(Status.PASS, "[Successfully logging in]");
@@ -81,9 +81,12 @@ public class TestCases extends BaseClass {
 
 		extentManager.test.log(Status.INFO, "[Pass the path of the file]");
 		js.executeScript("arguments[0].click();", xccDriver.getEducation().EResource_File_upload);
-		Thread.sleep(5000);
-		Runtime.getRuntime().exec("E:\\script_at\\upload.exe");
-		Thread.sleep(8000);
+		Thread.sleep(2000);
+		String fileName = "E:\\Thivya\\DirectMailAttachment\\Supportfiles\\sample-doc.doc";
+		String autoITExecutable = "E:\\script_at\\upload.exe " + fileName;
+		Runtime.getRuntime().exec(autoITExecutable);
+
+		wait.until(ExpectedConditions.presenceOfElementLocated(setup_Education.wait_ER_remove()));
 		extentManager.test.log(Status.PASS, "[File path is passed]");
 
 		extentManager.test.log(Status.INFO, "[click save]");
@@ -91,7 +94,8 @@ public class TestCases extends BaseClass {
 		extentManager.test.log(Status.PASS, "[clicked save]");
 
 		extentManager.test.log(Status.INFO, "[Verify the status message");
-		String added_msg = wait.until(ExpectedConditions.presenceOfElementLocated(setup_Education.wait__ER_add_statusMsg())).getText();		
+		String added_msg = wait
+				.until(ExpectedConditions.presenceOfElementLocated(setup_Education.wait__ER_add_statusMsg())).getText();
 		Assert.assertEquals(added_msg.trim(), "Educational resource saved successfully.");
 		extentManager.test.log(Status.PASS, "[status message verified]" + " " + added_msg.trim());
 

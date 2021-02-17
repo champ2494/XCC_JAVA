@@ -2,20 +2,20 @@
 <testng-results total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-16T12:53:20Z" name="Suite" finished-at="2021-02-16T12:54:03Z" duration-ms="43062">
+  <suite started-at="2021-02-17T06:14:48Z" name="Suite" finished-at="2021-02-17T06:15:17Z" duration-ms="28236">
     <groups>
     </groups>
-    <test started-at="2021-02-16T12:53:20Z" name="Test" finished-at="2021-02-16T12:54:03Z" duration-ms="43062">
+    <test started-at="2021-02-17T06:14:48Z" name="Test" finished-at="2021-02-17T06:15:17Z" duration-ms="28236">
       <class name="TestScripts.TestCases">
-        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:TestScripts.TestCases@31fa1761]" started-at="2021-02-16T18:23:20Z" name="BeforeSuite" finished-at="2021-02-16T18:23:20Z" duration-ms="215" status="PASS">
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:TestScripts.TestCases@31fa1761]" started-at="2021-02-17T11:44:48Z" name="BeforeSuite" finished-at="2021-02-17T11:44:48Z" duration-ms="173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeSuite -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestScripts.TestCases@31fa1761]" started-at="2021-02-16T18:23:20Z" name="setup" finished-at="2021-02-16T18:23:23Z" duration-ms="2792" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestScripts.TestCases@31fa1761]" started-at="2021-02-17T11:44:48Z" name="setup" finished-at="2021-02-17T11:44:52Z" duration-ms="3440" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginPageTest()[pri:0, instance:TestScripts.TestCases@31fa1761]" started-at="2021-02-16T18:23:23Z" name="loginPageTest" finished-at="2021-02-16T18:24:02Z" duration-ms="39748" status="FAIL">
+        <test-method signature="loginPageTest()[pri:0, instance:TestScripts.TestCases@31fa1761]" started-at="2021-02-17T11:44:52Z" name="loginPageTest" finished-at="2021-02-17T11:45:16Z" duration-ms="24003" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Educational resource saved successfully.] but found []]]>
@@ -27,7 +27,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:123)
 	at org.testng.Assert.assertEquals(Assert.java:176)
 	at org.testng.Assert.assertEquals(Assert.java:186)
-	at TestScripts.TestCases.loginPageTest(TestCases.java:95)
+	at TestScripts.TestCases.loginPageTest(TestCases.java:99)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -58,11 +58,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScripts.TestCases@31fa1761]" started-at="2021-02-16T18:24:03Z" name="tearDown" finished-at="2021-02-16T18:24:03Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScripts.TestCases@31fa1761]" started-at="2021-02-17T11:45:17Z" name="tearDown" finished-at="2021-02-17T11:45:17Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="AfterSuite()[pri:0, instance:TestScripts.TestCases@31fa1761]" started-at="2021-02-16T18:24:03Z" name="AfterSuite" finished-at="2021-02-16T18:24:03Z" duration-ms="467" status="PASS">
+        <test-method is-config="true" signature="AfterSuite()[pri:0, instance:TestScripts.TestCases@31fa1761]" started-at="2021-02-17T11:45:17Z" name="AfterSuite" finished-at="2021-02-17T11:45:17Z" duration-ms="689" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterSuite -->
